@@ -26,7 +26,6 @@ fun calcUnlucky(p: Double, trial_count: Int, hit_count: Int): Unlucky {
         else -> org.apache.commons.math3.util.Combinations(trial_count, hit_count).n.toDouble()
     }
     val is_lucky = hit_count > calcExpo(p, trial_count)
-    val pp = p1 * p2 * c
     return Unlucky(p1 * p2 * c, is_lucky)
 }
 

@@ -17,7 +17,7 @@
         android:background="#e2e2e2"
         android:clipToPadding="false"
         android:fillViewport="false"
-        app:layout_constraintBottom_toBottomOf="@+id/adView"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -29,26 +29,16 @@
             android:orientation="vertical">
 
             <include layout="@layout/main_card" />
-            <Space
-                android:layout_width="match_parent"
-                android:layout_height="60dp" />
+
+            <com.google.android.gms.ads.NativeExpressAdView
+                android:id="@+id/adView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                ads:adSize="320x280"
+                ads:adUnitId="ca-app-pub-2359565431337443/4128663273" />
+
         </LinearLayout>
     </ScrollView>
 
-    <com.google.android.gms.ads.AdView
-        android:id="@+id/adView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginEnd="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="8dp"
-        android:layout_marginStart="8dp"
-        ads:adSize="BANNER"
-        ads:adUnitId="ca-app-pub-2359565431337443/4056441270"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent" />
 
 </android.support.constraint.ConstraintLayout>
