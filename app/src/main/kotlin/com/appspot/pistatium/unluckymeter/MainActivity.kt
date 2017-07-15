@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
         val adRequest = AdRequest.Builder()
                 .addTestDevice("DC94E0945AA4C0A087C454509D6A3617")
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
+
                 .build()
         adView?.loadAd(adRequest)
     }
