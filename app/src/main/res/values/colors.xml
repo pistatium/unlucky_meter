@@ -3,4 +3,6 @@
     <color name="colorPrimary">#b5ad3f</color>
     <color name="colorPrimaryDark">#9c9536</color>
     <color name="colorAccent">#6fa622</color>
+    <color name="luckyLable">#f441af</color>
+    <color name="unluckyLable">#5c41f4</color>
 </resources>

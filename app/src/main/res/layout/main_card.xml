@@ -53,8 +53,8 @@
         android:layout_marginEnd="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginTop="0dp"
-        android:inputType="number"
-        android:text="0.01"
+        android:inputType="numberDecimal"
+        android:text="1.0"
         android:textAlignment="center"
         android:textSize="26sp"
         app:layout_constraintHorizontal_bias="1.0"
@@ -110,6 +110,7 @@
         android:layout_marginTop="8dp"
         android:text="判定！"
         android:textSize="26sp"
+        android:onClick="onClickCalc"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/etHitCount" />
